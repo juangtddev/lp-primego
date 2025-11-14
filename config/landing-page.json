@@ -1,82 +1,195 @@
 {
   "settings": {
     "theme": {
-      "primaryColor": "#0F172A",
-      "secondaryColor": "#F8FAFC",
+      "primaryColor": "#F3C91B",
+      "secondaryColor": "#114E78",
       "backgroundColor": "#FFFFFF",
-      "textColor": "#0F172A",
+      "textColor": "#1F2937",
       "borderRadius": "0.5rem"
     },
     "typography": {
-      "fontPrimary": "Inter",
+      "fontPrimary": "Poppins",
       "fontBody": "Inter"
     },
     "seo": {
-      "title": "Template de Landing Page Dinâmica",
-      "description": "Um template incrível feito com Next.js e muito amor."
+      "title": "PrimeGo - O App mais completo do mercado",
+      "description": "Gestão, rastreamento, manutenção e um clube de vantagens exclusivo para seu carro ou moto. Abra sua conta!"
     },
-    "whatsappLink": "https://wa.me/SEUNUMERO?text=Olá! Vi o site da JHS Chopeiras e gostaria de um orçamento."
+    "whatsappLink": "https://wa.me/SEUNUMERO?text=Olá!%20Vi%20o%20site%20da%20PrimeGo%20e%20gostaria%20de%20mais%20informações."
   },
   "header": {
-    "logo": "SuaMarca",
+    "logo": "/assets/logo-amarelo.png",
     "ctaButton": {
-      "text": "Fale Conosco",
-      "href": "/contact"
+      "text": "Abra sua Conta",
+      "href": "#planos"
     }
   },
   "sections": [
     {
       "component": "Hero",
       "settings": {
-        "paddingTop": "lg",
-        "paddingBottom": "lg",
-        "textColor": "#FFFFFF", 
-        "overlayColor": "#0F172A",
-        "overlayOpacity": 0.6,
-        "id": "inicio"     
+        "paddingTop": "xl",
+        "paddingBottom": "xl",
+        "backgroundColor": "#0B4F8A",
+        "textColor": "#FFFFFF",
+        "id": "inicio"
       },
       "data": {
-        "title": "Construa Landing Pages Incríveis em Minutos",
-        "subtitle": "Este template orientado a dados permite que você altere todo o conteúdo e estilo editando apenas um arquivo. Perfeito para freelancers.",
+        "title": "O App mais completo do mercado",
+        "subtitle": "Gestão, rastreamento, manutenção e um clube de vantagens exclusivo. Tudo em um só lugar.",
         "ctaButton": {
-          "text": "Comece a Usar",
-          "href": "#features"
+          "text": "Abra sua Conta",
+          "href": "#planos"
         },
-        "backgroundImageSrc": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=2070",
-        "image": {
-          "src": "/placeholder.svg",
-          "alt": "Ilustração de um produto digital"
-        }
+        "backgroundImageSrc": "/images/primego-hero-bg.jpg"
       }
     },
-  {
+    {
+      "component": "Portfolio",
+      "settings": {
+        "paddingTop": "lg",
+        "paddingBottom": "lg",
+        "backgroundColor": "#FFFFFF",
+        "textColor": "#1F2937",
+        "id": "veiculos"
+      },
+      "data": {
+        "title": "Escolha seu Veículo",
+        "subtitle": "Proteção e gestão completa para o que te move. Nossos planos são adaptados para seu veículo.",
+        "items": [
+          {
+            "type": "image",
+            "src": "/portfolio/primego-motos.jpg",
+            "thumbnailSrc": "/portfolio/primego-motos.jpg",
+            "alt": "Motos",
+            "description": "Planos e serviços completos para sua moto.",
+            "span": "col-span-1"
+          },
+          {
+            "type": "image",
+            "src": "/portfolio/primego-carros.jpg",
+            "thumbnailSrc": "/portfolio/primego-carros.jpg",
+            "alt": "Carros",
+            "description": "Planos e serviços completos para seu carro.",
+            "span": "col-span-1"
+          }
+        ]
+      }
+    },
+    {
+      "component": "HowItWorks",
+      "settings": {
+        "paddingTop": "lg",
+        "paddingBottom": "lg",
+        "backgroundColor": "#0B4F8A",
+        "textColor": "#FFFFFF",
+        "id": "como-funciona"
+      },
+      "data": {
+        "title": "Fácil de Verdade",
+        "subtitle": "Comece a usar em poucos minutos.",
+        "items": [
+          {
+            "title": "1. Baixe o app",
+            "description": "Disponível na App Store e Google Play."
+          },
+          {
+            "title": "2. Faça seu cadastro",
+            "description": "Processo simples e rápido, sem burocracia."
+          },
+          {
+            "title": "3. Comece a usar",
+            "description": "Aproveite todas as vantagens na palma da sua mão."
+          }
+        ]
+      }
+    },
+    {
       "component": "Features",
       "settings": {
         "paddingTop": "lg",
         "paddingBottom": "lg",
-        "backgroundColor": "#F8FAFC",
-        "textColor": "#0F172A",
-        "id": "recursos",      
-        "menuTitle": "Recursos"  
+        "backgroundColor": "#FFFFFF",
+        "textColor": "#1F2937",
+        "id": "vantagens"
       },
       "data": {
-        "title": "Tudo que Você Precisa",
-        "subtitle": "Uma plataforma completa para resolver seu problema, da concepção à implementação, sem dor de cabeça.",
+        "title": "Clube de Vantagens",
+        "subtitle": "Muito mais que um app, um ecossistema de benefícios.",
         "items": [
           {
-            "icon": "Rocket",
-            "title": "Lançamento Rápido",
-            "description": "Suba sua aplicação para produção em minutos, não em semanas, com nossa infraestrutura otimizada."
-          },
-          {
-            "icon": "BarChart3",
-            "title": "Dashboards Analíticos",
-            "description": "Entenda seus usuários com dashboards fáceis de usar e tome decisões baseadas em dados."
+            "icon": "Ticket",
+            "title": "Descontos",
+            "description": "Em combustível, estacionamentos e muito mais."
           },
           {
             "icon": "ShieldCheck",
-            "title": "Segurança de Ponta",
-            "description": "Durma tranquilo sabendo que seus dados estão protegidos com os melhores protocolos de segurança."
+            "title": "Proteção",
+            "description": "Acesso a serviços de proteção completa para seu veículo."
+          },
+          {
+            "icon": "Wrench",
+            "title": "Manutenção",
+            "description": "A rede mais completa de oficinas e serviços parceiros."
+          }
+        ]
+      }
+    },
+    {
+      "component": "Pricing",
+      "settings": {
+        "paddingTop": "lg",
+        "paddingBottom": "lg",
+        "backgroundColor": "#0B4F8A",
+        "textColor": "#FFFFFF",
+        "id": "planos",
+        "menuTitle": "Planos"
+      },
+      "data": {
+        "title": "Nossos Planos",
+        "subtitle": "Escolha o plano ideal para seu veículo e seu bolso.",
+        "plans": [
+          {
+            "name": "Motos",
+            "price": "R$ 0,99",
+            "period": "/dia",
+            "description": "A proteção completa para quem anda sobre duas rodas.",
+            "features": [
+              "Rastreamento em tempo real",
+              "Alerta de ignição",
+              "Alerta de movimento",
+              "Histórico de rotas",
+              "Cerca virtual",
+              "Bloqueio e Desbloqueio",
+              "Manutenção",
+              "Clube de Vantagens"
+            ],
+            "isFeatured": false,
+            "ctaButton": {
+              "text": "Contratar Plano Moto",
+              "href": "#contato"
+            }
+          },
+          {
+            "name": "Carros",
+            "price": "R$ 1,99",
+            "period": "/dia",
+            "description": "A solução definitiva para a gestão e segurança do seu carro.",
+            "features": [
+              "Rastreamento em tempo real",
+              "Alerta de ignição",
+              "Alerta de movimento",
+              "Histórico de rotas",
+              "Cerca virtual",
+              "Bloqueio e Desbloqueio",
+              "Manutenção",
+              "Clube de Vantagens"
+            ],
+            "isFeatured": true,
+            "ctaButton": {
+              "text": "Contratar Plano Carro",
+              "href": "#contato"
+            }
           }
         ]
       }
@@ -87,223 +200,24 @@
         "paddingTop": "lg",
         "paddingBottom": "lg",
         "backgroundColor": "#FFFFFF",
-        "textColor": "#0F172A",
-        "id": "como-funciona",      
-        "menuTitle": "Como Funciona"      
+        "textColor": "#1F2937",
+        "id": "parceiros"
       },
       "data": {
-        "title": "Comece em 3 Passos Simples",
-        "subtitle": "Nosso processo é desenhado para ser rápido, eficiente e direto ao ponto, para que você tenha resultados imediatos.",
+        "title": "Seja um parceiro PrimeGo",
+        "subtitle": "Indique e ganhe com a PrimeGo!",
         "items": [
           {
-            "title": "1. Cadastre-se",
-            "description": "Crie sua conta em menos de 60 segundos. Sem necessidade de cartão de crédito."
+            "title": "1. Baixe o App",
+            "description": "Faça seu cadastro gratuito no aplicativo."
           },
           {
-            "title": "2. Configure",
-            "description": "Conecte suas fontes de dados e personalize suas preferências com nosso guia intuitivo."
+            "title": "2. Cadastre-se como parceiro",
+            "description": "Acesse a área de parceiros e ative sua conta."
           },
           {
-            "title": "3. Comece a Usar",
-            "description": "Veja a mágica acontecer. Seus dados sendo processados e insights gerados em tempo real."
-          }
-        ]
-      }
-    },
-    {
-      "component": "Testimonials",
-      "settings": {
-        "paddingTop": "lg",
-        "paddingBottom": "lg",
-        "backgroundColor": "#F8FAFC",
-        "textColor": "#0F172A",
-        "id": "depoimentos",        
-        "menuTitle": "Depoimentos"        
-      },
-      "data": {
-        "title": "O que Nossos Clientes Dizem",
-        "subtitle": "Resultados reais de pessoas reais. Veja como transformamos os negócios de nossos parceiros.",
-        "items": [
-          {
-            "quote": "Esta plataforma mudou completamente nosso fluxo de trabalho. Economizamos mais de 10 horas por semana e reduzimos nossos erros em 30%.",
-            "name": "Maria Silva",
-            "role": "CEO, Tech Solutions",
-            "avatarSrc": "/avatars/maria-silva.png"
-          },
-          {
-            "quote": "O suporte é inacreditável. A equipe nos ajudou a configurar tudo em um dia e esteve disponível para todas as nossas dúvidas. Recomendo 100%.",
-            "name": "João Pereira",
-            "role": "Diretor de Operações, LogiNext",
-            "avatarSrc": "/avatars/joao-pereira.png"
-          },
-          {
-            "quote": "Finalmente uma ferramenta que entrega o que promete. A interface é limpa, os dashboards são intuitivos e os resultados são imediatos.",
-            "name": "Ana Costa",
-            "role": "Gerente de Produto, Innovate Co.",
-            "avatarSrc": "/avatars/ana-costa.png"
-          }
-        ]
-      }
-    },
-    {
-      "component": "Logos",
-      "settings": {
-        "paddingTop": "md",   
-        "paddingBottom": "md",
-        "backgroundColor": "#FFFFFF",
-        "textColor": "#0F172A"   ,
-        "id": "clientes"   
-      },
-      "data": {
-        "title": "Confiado pelas melhores empresas do mundo",
-        "items": [
-          {
-            "src": "https://placehold.co/150x60/f0f0f0/a1a1a1?text=LogoEmpresa",
-            "alt": "Logo Empresa 1"
-          },
-          {
-            "src": "https://placehold.co/150x60/f0f0f0/a1a1a1?text=LogoEmpresa",
-            "alt": "Logo Empresa 2"
-          },
-          {
-            "src": "https://placehold.co/150x60/f0f0f0/a1a1a1?text=LogoEmpresa",
-            "alt": "Logo Empresa 3"
-          },
-          {
-            "src": "https://placehold.co/150x60/f0f0f0/a1a1a1?text=LogoEmpresa",
-            "alt": "Logo Empresa 4"
-          },
-          {
-            "src": "https://placehold.co/150x60/f0f0f0/a1a1a1?text=LogoEmpresa",
-            "alt": "Logo Empresa 5"
-          }
-        ]
-      }
-    },
-    {
-      "component": "Guarantee",
-      "settings": {
-        "paddingTop": "lg",
-        "paddingBottom": "lg",
-        "backgroundColor": "#F8FAFC", 
-        "textColor": "#0F172A"
-      },
-      "data": {
-        "title": "Risco Zero, Satisfação Garantida",
-        "description": "Estamos tão confiantes de que você vai adorar nossa solução que oferecemos 30 dias de garantia incondicional. Se você não ficar satisfeito, devolvemos 100% do seu dinheiro. Sem perguntas.",
-        "badge": {
-          "src": "https://placehold.co/300x300/f0f0f0/a1a1a1?text=Selo+30+Dias",
-          "alt": "Selo de 30 dias de garantia"
-        },
-        "seals": [
-          {
-            "icon": "ShieldCheck",
-            "text": "Pagamento 100% Seguro"
-          },
-          {
-            "icon": "Lock",
-            "text": "Privacidade e Dados Criptografados"
-          }
-        ]
-      }
-    },
-    {
-      "component": "Pricing",
-      "settings": {
-        "paddingTop": "lg",
-        "paddingBottom": "lg",
-        "backgroundColor": "#FFFFFF",
-        "textColor": "#0F172A",
-        "id": "precos",         
-        "menuTitle": "Preços"   
-      },
-      "data": {
-        "title": "Planos Feitos Para Você",
-        "subtitle": "Escolha o plano que melhor se adapta ao seu estágio de crescimento. Cancele quando quiser.",
-        "plans": [
-          {
-            "name": "Básico",
-            "price": "R$ 29",
-            "period": "/mês",
-            "description": "Para indivíduos e freelancers que estão começando.",
-            "features": [
-              "1 Projeto",
-              "Até 10.000 visualizações",
-              "Analytics básicos",
-              "Suporte por E-mail"
-            ],
-            "isFeatured": false,
-            "ctaButton": {
-              "text": "Começar Agora",
-              "href": "/signup-basic"
-            }
-          },
-          {
-            "name": "Profissional",
-            "price": "R$ 79",
-            "period": "/mês",
-            "description": "Para pequenas empresas e equipes em crescimento.",
-            "features": [
-              "10 Projetos",
-              "Até 100.000 visualizações",
-              "Analytics avançados",
-              "Suporte Prioritário (Chat)",
-              "Integrações API"
-            ],
-            "isFeatured": true,
-            "ctaButton": {
-              "text": "Começar Agora",
-              "href": "/signup-pro"
-            }
-          },
-          {
-            "name": "Empresarial",
-            "price": "Customizado",
-            "period": "",
-            "description": "Para grandes empresas com necessidades escaláveis.",
-            "features": [
-              "Projetos Ilimitados",
-              "Visualizações Ilimitadas",
-              "SSO e SAML",
-              "Gerente de Conta Dedicado",
-              "SLA de 99.9%"
-            ],
-            "isFeatured": false,
-            "ctaButton": {
-              "text": "Entre em Contato",
-              "href": "/contact-sales"
-            }
-          }
-        ]
-      }
-    },
-   {
-      "component": "Faq",
-      "settings": {
-        "paddingTop": "lg",
-        "paddingBottom": "lg",
-        "backgroundColor": "#F8FAFC", 
-        "textColor": "#0F172A"
-      },
-      "data": {
-        "title": "Perguntas Frequentes",
-        "subtitle": "Ainda tem dúvidas? Encontre as respostas mais comuns abaixo ou entre em contato conosco.",
-        "items": [
-          {
-            "question": "Como funciona o período de teste gratuito?",
-            "answer": "Você pode usar todas as funcionalidades do plano Profissional por 14 dias, sem necessidade de cartão de crédito. Ao final do período, você pode escolher um plano pago ou sua conta será automaticamente revertida para o plano gratuito (se houver)."
-          },
-          {
-            "question": "Posso cancelar minha assinatura a qualquer momento?",
-            "answer": "Sim! Nossos planos são sem fidelidade. Você pode cancelar sua assinatura quando quiser, diretamente no painel da sua conta. O acesso permanecerá ativo até o final do período já pago."
-          },
-          {
-            "question": "Quais integrações estão disponíveis?",
-            "answer": "Oferecemos integrações nativas com as principais ferramentas do mercado, como Google Analytics, Slack, Zapier e muitas outras. Além disso, nossa API robusta permite que você crie suas próprias integrações."
-          },
-          {
-            "question": "O suporte técnico está incluído?",
-            "answer": "Sim, todos os planos incluem suporte via e-mail. Os planos Profissional e Empresarial contam com suporte prioritário via chat e telefone, respectivamente."
+            "title": "3. Indique e Ganhe",
+            "description": "Receba comissões por cada novo cliente que você indicar."
           }
         ]
       }
@@ -313,110 +227,126 @@
       "settings": {
         "paddingTop": "lg",
         "paddingBottom": "lg",
-        "backgroundColor": "#FFFFFF", 
-        "textColor": "#0F172A"
+        "backgroundColor": "#0B4F8A",
+        "textColor": "#FFFFFF",
+        "id": "sobre",
+        "menuTitle": "Sobre"
       },
       "data": {
-        "title": "Nossa Missão",
+        "title": "Conheça a Equipe",
         "paragraphs": [
-          "Nascemos da frustração com ferramentas complicadas e caras. Nossa missão é democratizar o acesso à tecnologia de ponta para empresas de todos os tamanhos.",
-          "Acreditamos que um software poderoso não precisa ser difícil de usar. Nossa equipe é composta por especialistas dedicados a criar soluções intuitivas que resolvem problemas reais."
+          "Somos apaixonados por tecnologia e movidos pelo desafio de criar soluções que facilitam a vida dos nossos clientes. A PrimeGo nasceu para revolucionar a forma como você gerencia seu veículo.",
+          "Nossa equipe combina anos de experiência em logística, tecnologia e atendimento ao cliente para entregar o app mais completo do mercado."
         ],
-        "image": {
-          "src": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071",
-          "alt": "Equipe trabalhando em um escritório moderno"
-        },
+        "image": [
+          {
+            "src": "/images/primego-equipe.jpg",
+            "alt": "Equipe PrimeGo"
+          }
+        ],
         "ctaButton": {
-          "text": "Conheça nossa história",
-          "href": "/sobre"
+          "text": "Trabalhe Conosco",
+          "href": "#contato"
         }
       }
     },
     {
-      "component": "Portfolio",
+      "component": "Faq",
       "settings": {
         "paddingTop": "lg",
         "paddingBottom": "lg",
-        "backgroundColor": "#F5F5DC",
-        "textColor": "#363636",
-        "id": "portfolio",
-        "menuTitle": "Portfólio" 
+        "backgroundColor": "#FFFFFF",
+        "textColor": "#1F2937",
+        "id": "ajuda",
+        "menuTitle": "Ajuda"
       },
       "data": {
-        "title": "Nossos Trabalhos Recentes",
-        "subtitle": "Veja alguns exemplos de instalações e manutenções realizadas pela JHS Chopeiras.",
+        "title": "Precisa de Ajuda?",
+        "subtitle": "Perguntas Frequentes",
         "items": [
           {
-            "imageSrc": "/portfolio/instalacao-bar.jpg", 
-            "imageAlt": "Instalação de chopeira em bar",
-            "title": "Instalação Completa - Bar Central",
-            "description": "Sistema de 2 vias instalado com sucesso, garantindo chope sempre na temperatura ideal.",
-            "link": "#"
+            "question": "Como funciona o rastreamento?",
+            "answer": "Nosso sistema utiliza tecnologia GPS de ponta para fornecer a localização em tempo real do seu veículo, acessível diretamente pelo seu smartphone 24h por dia."
           },
           {
-            "imageSrc": "/portfolio/manutencao-evento.jpg", 
-            "imageAlt": "Manutenção de chopeira em evento",
-            "title": "Manutenção Urgente - Festa Junina",
-            "description": "Atendimento rápido para solucionar problema de pressão durante evento.",
-            "link": "#" 
+            "question": "O que é o Clube de Vantagens?",
+            "answer": "É uma rede de parceiros que oferece descontos exclusivos para clientes PrimeGo em postos de combustível, oficinas, estacionamentos e muito mais."
           },
           {
-            "imageSrc": "/portfolio/chopeira-residencial.jpg", 
-            "imageAlt": "Instalação de chopeira residencial",
-            "title": "Chopeira Residencial - Sr. Antunes",
-            "description": "Instalação de modelo compacto para área gourmet, pronta para o churrasco!",
-            "link": "#" 
+            "question": "Como funciona o bloqueio e desbloqueio?",
+            "answer": "Pelo app, você pode enviar um comando de bloqueio que corta o combustível do veículo, imobilizando-o com segurança. O desbloqueio também é feito pelo app."
+          },
+          {
+            "question": "Posso cancelar a qualquer momento?",
+            "answer": "Sim. Nossos planos não têm fidelidade. Você pode cancelar quando quiser, sem burocracia."
           }
         ]
       }
     },
     {
- "component": "Contact",
-  "settings": {
-    "paddingTop": "xl",
-    "paddingBottom": "xl",
-    "backgroundColor": "#FFFBF5", 
-    "textColor": "#363636",
-    "id": "contato",
-    "menuTitle": "Contato"
-  },
-  "data": {
-    "title": "Fale Conosco Agora Mesmo!",
-    "subtitle": "Preencha o formulário abaixo e retornaremos o mais breve possível. Ou, se preferir, chame no WhatsApp.",
-    "recipientEmail": "juan.gtd.dev@gmail.com", 
-    "googleScriptUrl": "https://script.google.com/macros/s/AKfycbw75dlrX3vNeFprdRiISlHLHj4va34emB3nf2UrjLDf-7ODVaxtwIu_XIfazzaYJLK4/exec",
-    "ctaButton": {
-      "text": "Prefiro Chamar no WhatsApp",
-      "href": "https://wa.me/SEUNUMERO?text=Olá! Gostaria de um orçamento." 
-    }
-  }
-},
-    {
-      "component": "Footer",
-      "settings": {        
-        "backgroundColor": "#0F172A", 
-        "textColor": "#FFFFFF"        
+      "component": "Contact",
+      "settings": {
+        "paddingTop": "xl",
+        "paddingBottom": "xl",
+        "backgroundColor": "#0B4F8A",
+        "textColor": "#FFFFFF",
+        "id": "contato"
       },
       "data": {
-        "copyrightText": "© 2025 SuaMarca Inc. Todos os direitos reservados.",
+        "title": "Ajuda e Atendimento",
+        "subtitle": "Tem alguma dúvida ou sugestão? Envie uma mensagem para nossa equipe. Responderemos o mais rápido possível.",
+        "recipientEmail": "contato@primego.com.br",
+        "googleScriptUrl": "URL_DO_SEU_APPS_SCRIPT_AQUI",
+        "mapEmbedUrl": "URL_DO_GOOGLE_MAPS_AQUI"
+      }
+    },
+    {
+      "component": "Footer",
+      "settings": {
+        "backgroundColor": "#0B4F8A",
+        "textColor": "#FFFFFF"
+      },
+      "data": {
+        "copyrightText": "© 2025 PrimeGo. Todos os direitos reservados. Lages/SC",
         "socialLinks": [
-          { "platform": "LinkedIn", "href": "https://linkedin.com/in/seu-perfil" },
-          { "platform": "Instagram", "href": "https://instagram.com/seu-perfil" },
-          { "platform": "Twitter", "href": "https://x.com/seu-perfil" }
+          {
+            "platform": "Instagram",
+            "href": "#"
+          },
+          {
+            "platform": "Facebook",
+            "href": "#"
+          },
+          {
+            "platform": "LinkedIn",
+            "href": "#"
+          }
         ],
         "linkColumns": [
           {
-            "title": "Produto",
+            "title": "Endereço",
             "links": [
-              { "text": "Recursos", "href": "#features" },
-              { "text": "Preços", "href": "#pricing" }
+              {
+                "text": "Rua Fictícia, 123 - Sala 45",
+                "href": "#"
+              },
+              {
+                "text": "Lages / SC",
+                "href": "#"
+              }
             ]
           },
           {
-            "title": "Legal",
+            "title": "Contato",
             "links": [
-              { "text": "Política de Privacidade", "href": "/privacy" },
-              { "text": "Termos de Uso", "href": "/terms" }
+              {
+                "text": "contato@primego.com.br",
+                "href": "mailto:contato@primego.com.br"
+              },
+              {
+                "text": "(49) 99999-9999",
+                "href": "tel:+5549999999999"
+              }
             ]
           }
         ]
