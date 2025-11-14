@@ -1,7 +1,7 @@
 // lib/types.ts
 
 // --- Tipos de Base ---
-type PaddingValue = "sm" | "md" | "lg" | "xl";
+type PaddingValue = 'sm' | 'md' | 'lg' | 'xl';
 
 // Configurações base que toda seção terá
 interface BaseSectionSettings {
@@ -9,26 +9,26 @@ interface BaseSectionSettings {
   paddingBottom: PaddingValue;
   backgroundColor?: string;
   textColor?: string;
-  id?: string; 
+  id?: string;
   menuTitle?: string;
 }
 
 // --- Tipos Específicos do Hero ---
 export interface HeroSettings extends BaseSectionSettings {
-  overlayColor?: string;   // Cor do filtro escuro, ex: "#0F172A"
+  overlayColor?: string; // Cor do filtro escuro, ex: "#0F172A"
   overlayOpacity?: number; // Opacidade do filtro, ex: 0.5
 }
 
 export interface HeroData {
+  img: string;
   title: string;
   subtitle: string;
   ctaButton: { text: string; href: string };
-  backgroundImageSrc: string; 
 }
 
 // Interface "empacotada" do Hero
 export interface HeroSection {
-  component: "Hero";
+  component: 'Hero';
   settings: HeroSettings;
   data: HeroData;
 }
@@ -42,7 +42,7 @@ export interface FeaturesData {
     icon: string;
     title: string;
     description: string;
-  } [];
+  }[];
 }
 
 export interface FeaturesSection {
@@ -63,7 +63,7 @@ export interface HowItWorksData {
 }
 
 export interface HowItWorksSection {
-  component: "HowItWorks";
+  component: 'HowItWorks';
   settings: HowItWorksSettings;
   data: HowItWorksData;
 }
@@ -82,7 +82,7 @@ export interface TestimonialsData {
 }
 
 export interface TestimonialsSection {
-  component: "Testimonials";
+  component: 'Testimonials';
   settings: TestimonialsSettings;
   data: TestimonialsData;
 }
@@ -98,7 +98,7 @@ export interface LogosData {
 }
 
 export interface LogosSection {
-  component: "Logos";
+  component: 'Logos';
   settings: LogosSettings;
   data: LogosData;
 }
@@ -119,7 +119,7 @@ export interface GuaranteeData {
 }
 
 export interface GuaranteeSection {
-  component: "Guarantee";
+  component: 'Guarantee';
   settings: GuaranteeSettings;
   data: GuaranteeData;
 }
@@ -137,11 +137,11 @@ export interface PricingData {
     isFeatured: boolean;
     features: string[];
     ctaButton: { text: string; href: string };
-  }[];  
-};
+  }[];
+}
 
 export interface PricingSection {
-  component: "Pricing";
+  component: 'Pricing';
   settings: PricingSettings;
   data: PricingData;
 }
@@ -158,8 +158,8 @@ export interface AboutUsData {
   ctaButton: { text: string; href: string };
 }
 
-export interface AboutUsSection { 
-  component: "AboutUs";
+export interface AboutUsSection {
+  component: 'AboutUs';
   settings: AboutUsSettings;
   data: AboutUsData;
 }
@@ -176,7 +176,7 @@ export interface FaqData {
 }
 
 export interface FaqSection {
-  component: "Faq";
+  component: 'Faq';
   settings: FaqSettings;
   data: FaqData;
 }
@@ -189,7 +189,7 @@ export interface FooterSettings {
 export interface FooterData {
   copyrightText: string;
   socialLinks: {
-    platform: "LinkedIn" | "Instagram" | "Facebook" | "Twitter" | "Youtube"; // Nomes dos ícones Lucide + nomes comuns
+    platform: 'LinkedIn' | 'Instagram' | 'Facebook' | 'Twitter' | 'Youtube'; // Nomes dos ícones Lucide + nomes comuns
     href: string;
   }[];
   // Opcional: Colunas de links úteis
@@ -203,7 +203,7 @@ export interface FooterData {
 }
 
 export interface FooterSection {
-  component: "Footer";
+  component: 'Footer';
   settings: FooterSettings; // Usa as settings simplificadas
   data: FooterData;
 }
@@ -223,7 +223,7 @@ export interface PortfolioData {
 }
 
 export interface PortfolioSection {
-  component: "Portfolio";
+  component: 'Portfolio';
   settings: PortfolioSettings;
   data: PortfolioData;
 }
@@ -234,7 +234,7 @@ export interface ContactData {
   title: string;
   subtitle: string;
   recipientEmail: string;
-  googleScriptUrl: string; 
+  googleScriptUrl: string;
   ctaButton?: {
     text: string;
     href: string;
@@ -242,13 +242,24 @@ export interface ContactData {
 }
 
 export interface ContactSection {
-  component: "Contact";
+  component: 'Contact';
   settings: ContactSettings;
   data: ContactData;
 }
 
-export type Section = HeroSection | FeaturesSection | HowItWorksSection | TestimonialsSection | LogosSection | GuaranteeSection | PricingSection | AboutUsSection | FaqSection | PortfolioSection | ContactSection | FooterSection;
-
+export type Section =
+  | HeroSection
+  | FeaturesSection
+  | HowItWorksSection
+  | TestimonialsSection
+  | LogosSection
+  | GuaranteeSection
+  | PricingSection
+  | AboutUsSection
+  | FaqSection
+  | PortfolioSection
+  | ContactSection
+  | FooterSection;
 
 // --- Configuração da Página (JSON) ---
 export interface PageConfig {

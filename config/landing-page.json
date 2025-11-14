@@ -30,18 +30,18 @@
       "settings": {
         "paddingTop": "xl",
         "paddingBottom": "xl",
-        "backgroundColor": "#0B4F8A",
+        "backgroundColor": "#114E78",
         "textColor": "#FFFFFF",
         "id": "inicio"
       },
       "data": {
+        "img": "/assets/logo-amarelo.png",
         "title": "O App mais completo do mercado",
         "subtitle": "Gestão, rastreamento, manutenção e um clube de vantagens exclusivo. Tudo em um só lugar.",
         "ctaButton": {
           "text": "Abra sua Conta",
           "href": "#planos"
-        },
-        "backgroundImageSrc": "/images/primego-hero-bg.jpg"
+        }
       }
     },
     {

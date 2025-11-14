@@ -1,0 +1,44 @@
+{
+  "logo": {
+    "type": "image",
+    "content": "/assets/logo-amarelo.png",
+    "width": 120,
+    "height": 40
+  },
+  "links": [
+    {
+      "text": "Início",
+      "href": "/"
+    },
+    {
+      "text": "Sobre",
+      "href": "#sobre"
+    },
+    {
+      "text": "Serviços",
+      "href": "#servicos"
+    },
+    {
+      "text": "Contato",
+      "href": "#contato"
+    }
+  ],
+  "ctas": [
+    {
+      "text": "Baixar App",
+      "href": "/",
+      "variant": "default"
+    }
+  ],
+  "styles": {
+    "--header-bg": "hsl(0 0% 100%)",
+    "--header-fg": "hsl(222 47% 11%)",
+    "--header-border": "hsl(214 32% 91%)",
+    "--header-height": "4rem",
+    "--header-padding-x": "2rem",
+    "--link-color": "hsl(219, 59%, 30%)",
+    "--link-hover-color": "hsl(48, 93%, 53%)",
+    "--primary": "hsl(48, 93%, 53%)",
+    "--primary-foreground": "hsl(219, 59%, 30%)"
+  }
+}

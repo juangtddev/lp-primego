@@ -1,144 +1,24 @@
-import { Hero } from '@/components/sections/Hero';
-import { Features } from '@/components/sections/Features';
-import { HowItWorks } from '@/components/sections/HowItWorks';
-import { Testimonials  } from '@/components/sections/Testimonials';
-import { Logos } from '@/components/sections/Logos';
-import { Guarantee } from '@/components/sections/Guarantee';
-import { Pricing } from '@/components/sections/Pricing';
-import { Faq } from '@/components/sections/Faq';
-import { AboutUs } from '@/components/sections/AboutUs';
-import { Contact } from '@/components/sections/Contact';
-import { Portfolio } from '@/components/sections/Portfolio';
-import { Footer } from '@/components/sections/Footer';
-
-
-import pageConfigJson from '@/config/landing-page.json';
-import type { PageConfig } from '@/lib/types';
-
-const pageConfig: PageConfig = pageConfigJson as PageConfig;
-
+import { Header } from '@/components/blocks/Header';
+import { headerSchema } from '@/components/blocks/Header/header.schema';
+import headerData from '@/components/blocks/Header/data.example.json';
 
 export default function Home() {
-  const { sections } = pageConfig;
+  // 1. Valida o JSON (segurança em tempo de execução)
+  const validatedHeaderData = headerSchema.parse(headerData);
 
   return (
     <main>
-        {sections.map((section, index) => {
-        switch (section.component) {
-          case "Hero":
-            return (
-              <Hero
-                key={index}
-                data={section.data} 
-                settings={section.settings} 
-              />
-            );
+      {/* 2. Renderiza o template com os dados validados */}
+      <Header data={validatedHeaderData} />
 
-          case "Features":
-            return (
-              <Features
-                key={index}
-                data={section.data}
-                settings={section.settings} 
-              />
-            );
-
-          case "HowItWorks":
-            return (
-              <HowItWorks
-                key={index}
-                data={section.data}
-                settings={section.settings} 
-              />
-            );
-
-          case "Testimonials":
-            return (
-              <Testimonials
-                key={index}
-                data={section.data} // TS sabe que isso é TestimonialsData
-                settings={section.settings} // TS sabe que isso é TestimonialsSettings
-              />
-            );  
-
-          case "Logos":
-            return (
-              <Logos
-                key={index}
-                data={section.data} // TS sabe que isso é TestimonialsData
-                settings={section.settings} // TS sabe que isso é TestimonialsSettings
-              />
-            );  
-          
-          case "Guarantee":
-            return (
-              <Guarantee
-                key={index}
-                data={section.data} // TS sabe que isso é GuaranteeData
-                settings={section.settings} // TS sabe que isso é GuaranteeSettings
-              />
-            );
-          
-          case "Pricing":
-            return (
-              <Pricing
-                key={index}
-                data={section.data} // TS sabe que isso é PricingData
-                settings={section.settings} // TS sabe que isso é PricingSettings
-              />
-            );
-
-          case "Faq":
-            return (
-              <Faq
-                key={index}
-                data={section.data} // TS sabe que isso é FaqData
-                settings={section.settings} // TS sabe que isso é FaqSettings
-              />
-            );
-            
-            case "AboutUs":
-            return (
-              <AboutUs
-                key={index}
-                data={section.data} // TS sabe que isso é AboutUsData
-                settings={section.settings} // TS sabe que isso é AboutUsData 
-              />
-            );
-
-             case "Portfolio":
-            return (
-              <Portfolio
-                key={index}
-                data={section.data} // TS sabe que isso é AboutUsData
-                settings={section.settings} // TS sabe que isso é AboutUsData 
-              />
-            );
-          
-            case "Contact":
-            return (
-              <Contact
-                key={index}
-                data={section.data}
-                settings={section.settings}
-              />
-            );
-
-          case "Footer":
-            return (
-              <Footer
-                key={index}
-                data={section.data} // TS sabe que isso é FooterData
-                settings={section.settings} // TS sabe que isso é FooterSettings
-              />
-            );
-              
-          default:            
-            // eslint-disable-next-line @typescript-eslint/no-unused-vars
-            const _exhaustiveCheck: never = section;
-            return <div key={index}>Componente desconhecido</div>;
-        }
-      })}
+      {/* Conteúdo de placeholder para testar o 'sticky' */}
+      <div className="h-screen bg-gray-100 p-24">
+        <h1 className="text-4xl font-bold">Conteúdo da Página</h1>
+        <p>Role para baixo...</p>
+      </div>
+      <div className="h-screen bg-gray-200 p-24">
+        <h2 className="text-2xl">Mais conteúdo</h2>
+      </div>
     </main>
   );
 }
