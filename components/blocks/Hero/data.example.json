@@ -8,8 +8,8 @@
   "foregroundImage": {
     "src": "/assets/logo-amarelo.png",
     "alt": "Logo Amarelo",
-    "width": 500,
-    "height": 500
+    "width": 300,
+    "height": 100
   },
   "styles": {
     "--hero-background": "linear-gradient(135deg,rgba(31, 64, 122, 1) 0%, rgba(57, 89, 143, 1) 50%, rgba(31, 64, 122, 1) 100%)",
@@ -19,7 +19,7 @@
     "--hero-text-align": "center",
     "--hero-content-gap": "2rem",
     "--hero-min-height": "calc(100vh - 4rem)",
-    "--hero-padding-y": "0rem",
+    "--hero-padding-y": "2rem",
     "--hero-padding-x": "2rem",
     "--hero-title-color": "hsl(0, 0%, 100%)",
     "--hero-subtitle-color": "hsl(0, 0%, 100%)",

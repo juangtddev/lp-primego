@@ -1,0 +1,44 @@
+{
+  "cards": [
+    {
+      "icon": "Clock",
+      "title": "Motoristas disponíveis",
+      "text": "24 horas por dia, 7 dias por semana, para atender suas necessidades de transporte."
+    },
+    {
+      "icon": "MapPin",
+      "title": "Acompanhamento",
+      "text": "Em tempo real, para que você saiba exatamente onde seu motorista está."
+    },
+    {
+      "icon": "CreditCard",
+      "title": "Pagamento facilitado",
+      "text": "Diversas opções de pagamento, incluindo cartão de crédito, débito e dinheiro."
+    },
+    {
+      "icon": "Calendar",
+      "title": "Agendamento",
+      "text": "Agende suas corridas com antecedência pelo APP e garanta seu transporte."
+    }
+  ],
+  "ctas": [],
+  "styles": {
+    "--features-background": "hsl(255 100% 100%)",
+    "--features-padding-y": "5rem",
+    "--features-text-align": "center",
+    "--features-title-color": "hsl(222 47% 11%)",
+    "--features-subtitle-color": "hsl(215 20% 65%)",
+    "--features-grid-template-columns": "repeat(4, 1fr)",
+    "--features-grid-gap": "2rem",
+    "--card-background": "hsl(0 0% 100%)",
+    "--card-padding": "2rem",
+    "--card-border-radius": "0.5rem",
+    "--card-text-align": "left",
+    "--card-icon-color": "hsl(48, 93%, 53%)",
+    "--card-icon-size": "3rem",
+    "--card-title-color": "hsl(222 47% 11%)",
+    "--card-text-color": "hsl(215 20% 65%)",
+    "--primary": "hsl(48, 93%, 53%)",
+    "--primary-foreground": "hsl(210 40% 98%)"
+  }
+}
