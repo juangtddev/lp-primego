@@ -17,7 +17,7 @@ const NavLinks = ({ links }: { links: HeaderData['links'] }) => (
         key={link.href}
         href={link.href}
         className={cn(
-          'text-sm font-medium transition-colors',
+          'text-sm font-semibold transition-colors',
           'text-(--link-color,hsl(215_20%_65%)) hover:text-(--link-hover-color,hsl(222_47%_11%))',
         )}
       >
@@ -86,7 +86,7 @@ export function Header({ data }: { data: HeaderData }) {
             <NavLinks links={links} />
           </div>
         </nav>
-        <div className="flex items-center gap-2">
+        <div className="hidden md:flex items-center gap-2">
           <CtaButtons ctas={ctas} />
         </div>
 

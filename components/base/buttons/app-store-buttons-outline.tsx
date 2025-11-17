@@ -12,7 +12,10 @@ export const GooglePlayButton = ({
       aria-label="Get it on Google Play"
       href="#"
       {...props}
-      className={cx('rounded-[7px] text-fg-primary ', props.className)}
+      className={cx(
+        'rounded-[7px] text-fg-primary ring-1 ring-fg-primary outline-focus-ring ring-inset focus-visible:outline-2 focus-visible:outline-offset-2',
+        props.className,
+      )}
     >
       <svg
         width={size === 'md' ? 135 : 149}
@@ -111,7 +114,10 @@ export const AppStoreButton = ({
       aria-label="Download on the App Store"
       href="#"
       {...props}
-      className={cx('rounded-[7px] text-fg-primary ', props.className)}
+      className={cx(
+        'rounded-[7px] text-fg-primary ring-1 ring-fg-primary outline-focus-ring ring-inset focus-visible:outline-2 focus-visible:outline-offset-2',
+        props.className,
+      )}
     >
       <svg
         width={size === 'md' ? 120 : 132}

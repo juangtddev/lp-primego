@@ -1,0 +1,30 @@
+{
+  "title": "O App mais completo do mercado",
+  "subtitle": "Transporte de carro e moto com segurança e conforto.",
+  "paragraphs": [
+    "Motoristas disponíveis 24 horas por dia, 7 dias por semana."
+  ],
+  "ctas": [],
+  "foregroundImage": {
+    "src": "/assets/logo-amarelo.png",
+    "alt": "Logo Amarelo",
+    "width": 500,
+    "height": 500
+  },
+  "styles": {
+    "--hero-background": "linear-gradient(135deg,rgba(31, 64, 122, 1) 0%, rgba(57, 89, 143, 1) 50%, rgba(31, 64, 122, 1) 100%)",
+    "--hero-layout-direction": "col",
+    "--hero-align-items": "center",
+    "--hero-justify-content": "center",
+    "--hero-text-align": "center",
+    "--hero-content-gap": "2rem",
+    "--hero-min-height": "calc(100vh - 4rem)",
+    "--hero-padding-y": "0rem",
+    "--hero-padding-x": "2rem",
+    "--hero-title-color": "hsl(0, 0%, 100%)",
+    "--hero-subtitle-color": "hsl(0, 0%, 100%)",
+    "--hero-text-color": "hsl(0, 0%, 100%)",
+    "--primary": "hsl(48, 93%, 53%)",
+    "--primary-foreground": "hsl(210 40% 98%)"
+  }
+}
