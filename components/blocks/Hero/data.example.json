@@ -12,7 +12,7 @@
     "height": 100
   },
   "styles": {
-    "--hero-background": "linear-gradient(135deg,rgba(31, 64, 122, 1) 0%, rgba(57, 89, 143, 1) 50%, rgba(31, 64, 122, 1) 100%)",
+    "--hero-background": "linear-gradient(135deg,rgba(18, 80, 123, 1) 0%, rgba(38, 104, 147, 1) 50%, rgba(18, 80, 123, 1) 100%)",
     "--hero-layout-direction": "col",
     "--hero-align-items": "center",
     "--hero-justify-content": "center",

@@ -16,7 +16,7 @@ export function Pricing({ data }: PricingProps) {
   const defaultStyles = {
     '--section-background': 'hsl(0 0% 100%)',
     '--section-padding-y': '4rem',
-    '--section-text-align': 'left',
+    '--section-text-align': 'center',
     '--grid-template-columns': 'repeat(1, 1fr)',
     '--grid-gap': '1.5rem',
     '--card-background': 'hsl(0 0% 100%)',
@@ -37,6 +37,7 @@ export function Pricing({ data }: PricingProps) {
         'w-full',
         '[background:var(--section-background)]',
         'py-(--section-padding-y)',
+        'px-4 md:px-40',
       )}
     >
       <div className="container mx-auto flex flex-col items-center">
@@ -45,21 +46,21 @@ export function Pricing({ data }: PricingProps) {
           <div
             className={cn(
               'flex flex-col gap-4',
-              'text-(--section-text-align)',
-              'items-[var(--section-text-align)]',
+              'text-center',
+              'items-(--section-text-align)',
+              'justify-(--section-text-align)',
             )}
           >
-            {title && (
-              <h2
-                className="text-3xl md:text-4xl font-bold"
-                style={{ color: 'var(--section-title-color)' }}
-              >
-                {title}
-              </h2>
-            )}
+            <h2
+              className="text-3xl md:text-4xl font-bold"
+              style={{ color: 'var(--section-title-color)' }}
+            >
+              Escolha seu <span className="text-primary">Veículo</span>
+            </h2>
+
             {subtitle && (
               <p
-                className="text-lg max-w-2xl"
+                className="text-sm max-w-2xl"
                 style={{ color: 'var(--section-subtitle-color)' }}
               >
                 {subtitle}
@@ -72,7 +73,7 @@ export function Pricing({ data }: PricingProps) {
         {cards && cards.length > 0 && (
           <div
             className={cn(
-              'grid w-full mt-12',
+              'grid w-full m-12',
               'grid-cols-1', // Mobile-first
               'md:grid-cols-(--grid-template-columns)',
               'gap-(--grid-gap)',
@@ -102,41 +103,45 @@ export function Pricing({ data }: PricingProps) {
                   <div
                     className={cn(
                       'absolute inset-0',
-                      'bg-(--card-top-bg-overlay)', // Cor do overlay
+                      'bg-[linear-gradient(to_bottom,_rgba(18,80,123,0)_0%,_rgba(18,80,123,.8)_100%)]',
                       'transition-opacity duration-300',
                       'group-hover:opacity-0', // Mágica do hover
                     )}
                   />
 
                   {/* Conteúdo (em cima do overlay) */}
-                  <div className="relative z-10">
-                    {card.top.icon && (
-                      <Icon
-                        name={card.top.icon}
-                        style={{
-                          color: 'var(--card-top-icon-color)',
-                          width: 'var(--card-top-icon-size)',
-                          height: 'var(--card-top-icon-size)',
-                        }}
-                        className="mb-2"
-                      />
-                    )}
-                    {card.top.title && (
-                      <h3
-                        className="text-2xl font-bold"
-                        style={{ color: 'var(--card-top-title-color)' }}
-                      >
-                        {card.top.title}
-                      </h3>
-                    )}
-                    {card.top.subtitle && (
-                      <p
-                        className="text-sm"
-                        style={{ color: 'var(--card-top-subtitle-color)' }}
-                      >
-                        {card.top.subtitle}
-                      </p>
-                    )}
+                  <div className="relative z-10 ">
+                    <div className="flex items-center">
+                      {card.top.icon && (
+                        <Icon
+                          name={card.top.icon}
+                          style={{
+                            color: 'var(--card-top-icon-color)',
+                            width: 'var(--card-top-icon-size)',
+                            height: 'var(--card-top-icon-size)',
+                          }}
+                          className="bg-primary rounded-sm p-2"
+                        />
+                      )}
+                      <div className="ml-4 flex flex-col item-start gap-0.5">
+                        {card.top.title && (
+                          <h3
+                            className="text-2xl font-bold"
+                            style={{ color: 'var(--card-top-title-color)' }}
+                          >
+                            {card.top.title}
+                          </h3>
+                        )}
+                        {card.top.subtitle && (
+                          <p
+                            className="text-sm font-semibold"
+                            style={{ color: 'var(--card-top-subtitle-color)' }}
+                          >
+                            {card.top.subtitle}
+                          </p>
+                        )}
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -157,7 +162,7 @@ export function Pricing({ data }: PricingProps) {
                               width: 'var(--benefit-icon-size)',
                               height: 'var(--benefit-icon-size)',
                             }}
-                            className="shrink-0"
+                            className="shrink-0 p-1 bg-green-400/20 rounded-2xl"
                           />
                           <span style={{ color: 'var(--benefit-text-color)' }}>
                             {item.text}
@@ -171,7 +176,7 @@ export function Pricing({ data }: PricingProps) {
                     <Button
                       variant={card.bottom.cta.variant}
                       asChild
-                      className="mt-4 w-full"
+                      className="mt-4 w-full text-[rgb(18, 80, 123)] font-semibold"
                     >
                       <Link href={card.bottom.cta.href}>
                         {card.bottom.cta.text}
@@ -183,6 +188,39 @@ export function Pricing({ data }: PricingProps) {
             ))}
           </div>
         )}
+
+        <div className="flex gap-2 text-center">
+          <div className="flex flex-col items-center gap-1.5 max-w-40">
+            <Icon
+              name={'Clock'}
+              className="w-10 h-10 text-primary bg-white/10 p-2 rounded-md"
+            />
+            <h3 className="text-sm text-white font-semibold">Rápido</h3>
+            <p className="text-xs text-white">
+              Chegue ao seu destino no menor tempo
+            </p>
+          </div>
+          <div>
+            <div className="flex flex-col items-center gap-1.5 max-w-40">
+              <Icon
+                name={'Shield'}
+                className="w-10 h-10 text-primary bg-white/10 p-2 rounded-md"
+              />
+              <h3 className="text-sm text-white font-semibold">Seguro</h3>
+              <p className="text-xs text-white">
+                Motoristas verificados e capacitados
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col items-center gap-1.5 max-w-40">
+            <Icon
+              name={'DollarSign'}
+              className="w-10 h-10 text-primary bg-white/10 p-2 rounded-md"
+            />
+            <h3 className="text-sm text-white font-semibold">Econômico</h3>
+            <p className="text-xs text-white">Preços justos e transparentes</p>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -1,60 +1,35 @@
 {
-  "title": "Planos que cabem no seu bolso",
-  "subtitle": "Escolha o plano que melhor se adapta à sua necessidade e comece hoje mesmo.",
+  "title": "",
+  "subtitle": "Carro ou moto? Você decide como quer se locomover",
   "cards": [
     {
       "top": {
-        "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600",
-        "icon": "Package",
-        "title": "Básico",
-        "subtitle": "Para quem está começando"
+        "imageUrl": "/assets/cars.jpg",
+        "icon": "Car",
+        "title": "Transporte de Carro",
+        "subtitle": "Conforto e Espaço"
       },
       "bottom": {
         "benefits": [
           {
-            "icon": "Check",
-            "text": "1 Landing Page"
+            "icon": "Zap",
+            "text": "Até 4 passageiros"
           },
           {
-            "icon": "Check",
-            "text": "Hospedagem Inclusa"
+            "icon": "Zap",
+            "text": "Ar condicionado"
           },
           {
-            "icon": "X",
-            "text": "Suporte Prioritário"
+            "icon": "Zap",
+            "text": "Porta-malas espaçoso"
+          },
+          {
+            "icon": "Zap",
+            "text": "Viagens mais longas"
           }
         ],
         "cta": {
-          "text": "Começar Agora",
-          "href": "#",
-          "variant": "outline"
-        }
-      }
-    },
-    {
-      "top": {
-        "imageUrl": "https://images.unsplash.com/photo-1550745165-9bc0b252726c?w=600",
-        "icon": "PackageOpen",
-        "title": "Profissional",
-        "subtitle": "Para negócios em crescimento"
-      },
-      "bottom": {
-        "benefits": [
-          {
-            "icon": "Check",
-            "text": "5 Landing Pages"
-          },
-          {
-            "icon": "Check",
-            "text": "Hospedagem Inclusa"
-          },
-          {
-            "icon": "Check",
-            "text": "Suporte Prioritário"
-          }
-        ],
-        "cta": {
-          "text": "Escolher Plano",
+          "text": "Solicitar Agora",
           "href": "#",
           "variant": "default"
         }
@@ -62,56 +37,59 @@
     },
     {
       "top": {
-        "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600",
-        "icon": "PackageCheck",
-        "title": "Enterprise",
-        "subtitle": "Para grandes volumes"
+        "imageUrl": "/assets/moto.jpeg",
+        "icon": "Bike",
+        "title": "Transporte de Moto",
+        "subtitle": "Rapidez e Agilidade"
       },
       "bottom": {
         "benefits": [
           {
-            "icon": "Check",
-            "text": "Landing Pages Ilimitadas"
+            "icon": "Zap",
+            "text": "1 passageiro"
           },
           {
-            "icon": "Check",
-            "text": "Hospedagem Dedicada"
+            "icon": "Zap",
+            "text": "Ideal para trânsito"
           },
           {
-            "icon": "Check",
-            "text": "Suporte 24/7"
+            "icon": "Zap",
+            "text": "Chegue mais rápido"
+          },
+          {
+            "icon": "Zap",
+            "text": "Economia no trajeto"
           }
         ],
         "cta": {
-          "text": "Entrar em Contato",
+          "text": "Solicitar Moto",
           "href": "#",
-          "variant": "outline"
+          "variant": "default"
         }
       }
     }
   ],
   "styles": {
-    "--section-background": "hsl(0 0% 100%)",
+    "--section-background": "linear-gradient(135deg,rgba(18, 80, 123, 1) 0%, rgba(38, 104, 147, 1) 50%, rgba(18, 80, 123, 1) 100%)",
     "--section-padding-y": "5rem",
     "--section-text-align": "center",
-    "--section-title-color": "hsl(222 47% 11%)",
-    "--section-subtitle-color": "hsl(215 20% 65%)",
-    "--grid-template-columns": "repeat(3, 1fr)",
+    "--section-title-color": "hsl(255, 100%, 100%)",
+    "--section-subtitle-color": "hsl(255, 100%, 100%)",
+    "--grid-template-columns": "repeat(2, 2fr)",
     "--grid-gap": "2rem",
     "--card-background": "hsl(0 0% 100%)",
     "--card-border-radius": "0.75rem",
-    "--card-top-bg-overlay": "hsla(222, 47%, 11%, 0.6)",
     "--card-top-min-height": "200px",
     "--card-top-padding": "1.5rem",
-    "--card-top-icon-color": "hsl(0 0% 100%)",
-    "--card-top-icon-size": "2rem",
+    "--card-top-icon-color": "hsl(218, 60%, 30%)",
+    "--card-top-icon-size": "3rem",
     "--card-top-title-color": "hsl(0 0% 100%)",
-    "--card-top-subtitle-color": "hsl(0 0% 90%)",
+    "--card-top-subtitle-color": "hsl(48, 93%, 53%)",
     "--card-bottom-padding": "1.5rem",
-    "--benefit-icon-color": "hsl(222 47% 11%)",
-    "--benefit-text-color": "hsl(215 20% 65%)",
-    "--benefit-icon-size": "1rem",
-    "--primary": "hsl(222 47% 11%)",
-    "--primary-foreground": "hsl(210 40% 98%)"
+    "--benefit-icon-color": "hsl(145, 43%, 42%)",
+    "--benefit-text-color": "hsl(218, 60%, 30%)",
+    "--benefit-icon-size": "1.5rem",
+    "--primary": "hsl(48, 93%, 53%)",
+    "--primary-foreground": "hsl(255, 100%, 100%)"
   }
 }

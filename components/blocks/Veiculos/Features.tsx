@@ -32,8 +32,6 @@ export function Features({ data }: FeaturesProps) {
         'w-full',
         '[background:var(--features-background)]',
         'py-(--features-padding-y)',
-        'px-4',
-        'md:px-40',
       )}
     >
       <div className="container mx-auto flex flex-col items-center">
@@ -70,7 +68,7 @@ export function Features({ data }: FeaturesProps) {
         {cards && cards.length > 0 && (
           <div
             className={cn(
-              'grid w-full',
+              'grid w-full mt-12',
               // Mobile-first: 1 coluna
               'grid-cols-1',
               // Desktop: usa a variável do JSON
@@ -87,7 +85,6 @@ export function Features({ data }: FeaturesProps) {
                   padding: 'var(--card-padding)',
                   borderRadius: 'var(--card-border-radius)',
                   textAlign: 'var(--card-text-align)' as 'left' | 'center',
-                  boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
                 }}
               >
                 {card.icon && (
@@ -98,7 +95,7 @@ export function Features({ data }: FeaturesProps) {
                       width: 'var(--card-icon-size)',
                       height: 'var(--card-icon-size)',
                     }}
-                    className="mb-4 bg-primary/10 rounded-2xl p-2"
+                    className="mb-4"
                   />
                 )}
                 {card.title && (

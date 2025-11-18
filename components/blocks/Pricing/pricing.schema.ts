@@ -27,7 +27,7 @@ const BenefitItemSchema = z.object({
 const PricingCardSchema = z.object({
   // Parte Superior (com a imagem e overlay)
   top: z.object({
-    imageUrl: z.string().url(),
+    imageUrl: z.string(),
     icon: z
       .custom<keyof typeof icons>(
         (val): val is keyof typeof icons =>
