@@ -15,9 +15,9 @@ import { Pricing } from '@/components/blocks/Pricing';
 import { pricingSchema } from '@/components/blocks/Pricing/pricing.schema';
 import pricingData from '@/components/blocks/Pricing/data.example.json';
 
-import { Veiculos } from '@/components/blocks/Veiculos';
-import { veiculosSchema } from '@/components/blocks/Veiculos/veiculos.schema';
-import veiculosData from '@/components/blocks/Veiculos/data.example.json';
+import { HowItWorks } from '@/components/blocks/HowItWorks';
+import { howItWorksSchema } from '@/components/blocks/HowItWorks/how-it-works.schema';
+import howItWorksData from '@/components/blocks/HowItWorks/data.example.json';
 
 export default function Home() {
   // 2. Validar os dados
@@ -25,7 +25,7 @@ export default function Home() {
   const validatedHeroData = heroSchema.parse(heroData);
   const validatedFeaturesData = featuresSchema.parse(featuresData);
   const validatedPricingData = pricingSchema.parse(pricingData);
-  const validatedVeiculosData = veiculosSchema.parse(veiculosData);
+  const validatedHowItWorksData = howItWorksSchema.parse(howItWorksData);
 
   return (
     <main>
@@ -33,7 +33,7 @@ export default function Home() {
       <Hero data={validatedHeroData} />
       <Features data={validatedFeaturesData} />
       <Pricing data={validatedPricingData} />
-      <Veiculos data={validatedVeiculosData} />
+      <HowItWorks data={validatedHowItWorksData} />
 
       {/* Placeholder */}
       <div className="h-screen bg-gray-100 p-24">
