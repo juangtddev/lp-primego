@@ -1,47 +1,44 @@
 {
   "title": "Tudo o que você precisa",
-  "subtitle": "Nossa plataforma é completa e flexível para se adaptar ao seu negócio.",
+  "subtitle": "Oferecemos diferentes opções para atender às suas necessidades",
   "cards": [
     {
-      "icon": "Zap",
-      "title": "Rápido e Eficiente",
-      "text": "Performance otimizada para carregar seu site em milissegundos."
+      "icon": "Star",
+      "bgColor": "hsl(48, 93%, 53%)",
+      "title": "Premium",
+      "text": "Carros mais modernos e robustos, proporcionando conforto exclusivo do começo ao fim da viagem"
     },
     {
-      "icon": "ShieldCheck",
-      "title": "Seguro por Padrão",
-      "text": "Proteção robusta contra ameaças e total conformidade com a LGPD."
+      "icon": "Users",
+      "bgColor": "hsl(204, 77%, 24%)",
+      "title": "Mulher",
+      "text": "Sinta-se mais confortável com uma mulher no volante, essa viagem é ideal para você."
     },
     {
-      "icon": "LayoutGrid",
-      "title": "Layouts Flexíveis",
-      "text": "Construa qualquer tipo de página com nossa biblioteca de blocos."
+      "icon": "Car",
+      "bgColor": "hsl(220, 24%, 19%)",
+      "title": "Comum",
+      "text": "Indicado para passageiros sem muita preferência de motoristas ou carros. Rápido e econômico."
     }
   ],
-  "ctas": [
-    {
-      "text": "Ver todos os recursos",
-      "href": "#",
-      "variant": "default"
-    }
-  ],
+    
   "styles": {
-    "--features-background": "hsl(210 40% 98%)",
-    "--features-padding-y": "5rem",
-    "--features-text-align": "center",
-    "--features-title-color": "hsl(222 47% 11%)",
-    "--features-subtitle-color": "hsl(215 20% 65%)",
-    "--features-grid-template-columns": "repeat(3, 1fr)",
-    "--features-grid-gap": "2rem",
+    "--veiculos-background": "linear-gradient(225deg,rgba(18, 80, 123, 1) 0%, rgba(38, 104, 147, 1) 50%, rgba(18, 80, 123, 1) 100%)",
+    "--veiculos-padding-y": "5rem",
+    "--veiculos-text-align": "center",
+    "--veiculos-title-color": "hsl(0 0% 100%)",
+    "--veiculos-subtitle-color": "hsl(0 0% 100%)",
+    "--veiculos-grid-template-columns": "repeat(3, 1fr)",
+    "--veiculos-grid-gap": "2rem",
     "--card-background": "hsl(0 0% 100%)",
     "--card-padding": "2rem",
     "--card-border-radius": "0.5rem",
     "--card-text-align": "left",
-    "--card-icon-color": "hsl(222 47% 11%)",
+    "--card-icon-color": "hsl(0 0% 100%)",
     "--card-icon-size": "2rem",
-    "--card-title-color": "hsl(222 47% 11%)",
-    "--card-text-color": "hsl(215 20% 65%)",
-    "--primary": "hsl(222 47% 11%)",
+    "--card-title-color": "hsl(205, 75%, 28%)",
+    "--card-text-color": "hsl(215, 14%, 34%)",
+    "--primary": "hsl(48, 93%, 53%)",
     "--primary-foreground": "hsl(210 40% 98%)"
   }
 }

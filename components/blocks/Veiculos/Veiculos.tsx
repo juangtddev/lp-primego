@@ -1,24 +1,24 @@
 import Link from 'next/link';
-import { type FeaturesData } from './features.schema';
+import { type veiculosData } from './veiculos.schema';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Icon } from '@/components/Icon'; // Importa nosso helper
 
 // Propriedades
-interface FeaturesProps {
-  data: FeaturesData;
+interface VeiculosProps {
+  data: veiculosData;
 }
 
-export function Features({ data }: FeaturesProps) {
+export function Veiculos({ data }: VeiculosProps) {
   const { title, subtitle, cards, ctas, styles } = data;
 
   // Fallbacks
   const defaultStyles = {
-    '--features-background': 'hsl(0 0% 100%)',
-    '--features-padding-y': '4rem',
-    '--features-text-align': 'left',
-    '--features-grid-template-columns': 'repeat(1, 1fr)',
-    '--features-grid-gap': '1.5rem',
+    '--veiculos-background': 'hsl(0 0% 100%)',
+    '--veiculos-padding-y': '4rem',
+    '--veiculos-text-align': 'left',
+    '--veiculos-grid-template-columns': 'repeat(1, 1fr)',
+    '--veiculos-grid-gap': '1.5rem',
     '--card-padding': '1.5rem',
     '--card-icon-size': '1.5rem',
   };
@@ -30,8 +30,9 @@ export function Features({ data }: FeaturesProps) {
       style={combinedStyles}
       className={cn(
         'w-full',
-        '[background:var(--features-background)]',
-        'py-(--features-padding-y)',
+        '[background:var(--veiculos-background)]',
+        'py-(--veiculos-padding-y)',
+        'px-4 md:px-40',
       )}
     >
       <div className="container mx-auto flex flex-col items-center">
@@ -40,23 +41,23 @@ export function Features({ data }: FeaturesProps) {
           <div
             className={cn(
               'flex flex-col gap-4',
-              'text-(--features-text-align)',
+              'text-(--veiculos-text-align)',
               // Centraliza o container do cabeçalho
-              'items-[var(--features-text-align)]',
+              'items-[var(--veiculos-text-align)]',
             )}
           >
             {title && (
               <h2
                 className="text-3xl md:text-4xl font-bold"
-                style={{ color: 'var(--features-title-color)' }}
+                style={{ color: 'var(--veiculos-title-color)' }}
               >
-                {title}
+                Escolha a sua <span className="text-primary">Viagem</span>
               </h2>
             )}
             {subtitle && (
               <p
-                className="text-lg max-w-2xl"
-                style={{ color: 'var(--features-subtitle-color)' }}
+                className="text-sm max-w-2xl"
+                style={{ color: 'var(--veiculos-subtitle-color)' }}
               >
                 {subtitle}
               </p>
@@ -68,12 +69,12 @@ export function Features({ data }: FeaturesProps) {
         {cards && cards.length > 0 && (
           <div
             className={cn(
-              'grid w-full mt-12',
+              'grid w-full mt-12 ',
               // Mobile-first: 1 coluna
               'grid-cols-1',
               // Desktop: usa a variável do JSON
-              'md:grid-cols-(--features-grid-template-columns)',
-              'gap-(--features-grid-gap)',
+              'md:grid-cols-(--veiculos-grid-template-columns)',
+              'gap-(--veiculos-grid-gap)',
             )}
           >
             {cards.map((card, index) => (
@@ -92,10 +93,12 @@ export function Features({ data }: FeaturesProps) {
                     name={card.icon}
                     style={{
                       color: 'var(--card-icon-color)',
+                      backgroundColor:
+                        card.bgColor || 'var(--card-icon-bg-color)',
                       width: 'var(--card-icon-size)',
                       height: 'var(--card-icon-size)',
                     }}
-                    className="mb-4"
+                    className="mb-4 p-2 rounded-md bg-primary"
                   />
                 )}
                 {card.title && (

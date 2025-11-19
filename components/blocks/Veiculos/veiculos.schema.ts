@@ -16,39 +16,40 @@ const CtaSchema = z.object({
 });
 
 // Schema para cada Card
-const FeatureCardSchema = z.object({
+const VeiculosCardSchema = z.object({
   // Valida se o nome do ícone existe no lucide-react
   icon: z.custom<keyof typeof icons>(
     (val): val is keyof typeof icons => typeof val === 'string' && val in icons,
   ),
+  bgColor: z.string().optional(),
   title: z.string(),
   text: z.string(),
 });
 
 // Schema Principal
-export const featuresSchema = z.object({
+export const veiculosSchema = z.object({
   // Cabeçalho do Bloco (opcional)
   title: z.string().optional(),
   subtitle: z.string().optional(),
 
   // Conteúdo (opcional)
-  cards: z.array(FeatureCardSchema).optional(),
+  cards: z.array(VeiculosCardSchema).optional(),
   ctas: z.array(CtaSchema).optional(),
 
   // Estilos (o coração da flexibilidade)
   styles: z
     .object({
       // --- Estilos da Seção ---
-      '--features-background': z.string().optional(),
-      '--features-padding-y': z.string().optional(),
-      '--features-text-align': z.string().optional(), // 'center' ou 'left'
-      '--features-title-color': z.string().optional(),
-      '--features-subtitle-color': z.string().optional(),
+      '--veiculos-background': z.string().optional(),
+      '--veiculos-padding-y': z.string().optional(),
+      '--veiculos-text-align': z.string().optional(), // 'center' ou 'left'
+      '--veiculos-title-color': z.string().optional(),
+      '--veiculos-subtitle-color': z.string().optional(),
 
       // --- Estilos do Grid de Cards ---
       // Ex: "repeat(3, 1fr)" para 3 colunas
-      '--features-grid-template-columns': z.string().optional(),
-      '--features-grid-gap': z.string().optional(),
+      '--veiculos-grid-template-columns': z.string().optional(),
+      '--veiculos-grid-gap': z.string().optional(),
 
       // --- Estilos dos Cards ---
       '--card-background': z.string().optional(),
@@ -68,4 +69,4 @@ export const featuresSchema = z.object({
 });
 
 // Extrai o tipo
-export type FeaturesData = z.infer<typeof featuresSchema>;
+export type veiculosData = z.infer<typeof veiculosSchema>;

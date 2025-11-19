@@ -176,7 +176,7 @@ export function Pricing({ data }: PricingProps) {
                     <Button
                       variant={card.bottom.cta.variant}
                       asChild
-                      className="mt-4 w-full text-[rgb(18, 80, 123)] font-semibold"
+                      className="mt-4 w-full text-[hsl(204,77%,24%)] font-semibold"
                     >
                       <Link href={card.bottom.cta.href}>
                         {card.bottom.cta.text}
