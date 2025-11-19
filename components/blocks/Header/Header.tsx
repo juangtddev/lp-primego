@@ -31,7 +31,12 @@ const NavLinks = ({ links }: { links: HeaderData['links'] }) => (
 const CtaButtons = ({ ctas }: { ctas: HeaderData['ctas'] }) => (
   <>
     {ctas?.map((cta) => (
-      <Button key={cta.href} variant={cta.variant} asChild>
+      <Button
+        key={cta.href}
+        variant={cta.variant}
+        className="font-semibold"
+        asChild
+      >
         <Link href={cta.href}>{cta.text}</Link>
       </Button>
     ))}
