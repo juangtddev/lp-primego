@@ -33,11 +33,12 @@ export function Footer({ data }: FooterProps) {
         '[background:var(--footer-bg)]',
         'text-(--footer-text-color)',
         'pt-(--footer-padding-y)',
+        'px-4 md:px-40',
       )}
     >
       <div className="container mx-auto flex flex-col">
         {/* --- Grid de 4 Colunas --- */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-(--footer-gap) mb-(--footer-padding-y)">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-(--footer-gap) mb-(--footer-padding-y) ">
           {/* Coluna 1: Marca */}
           {brand && (
             <div className="flex flex-col gap-4">
@@ -176,7 +177,7 @@ export function Footer({ data }: FooterProps) {
         {/* --- Separador e Copyright --- */}
         {bottom && (
           <div
-            className="border-t py-6 text-center md:text-left"
+            className="border-t py-6 text-center "
             style={{ borderColor: 'var(--footer-border-color)' }}
           >
             <p className="text-sm opacity-80">{bottom.copyrightText}</p>

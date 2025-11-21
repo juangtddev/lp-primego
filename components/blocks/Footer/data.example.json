@@ -1,10 +1,10 @@
 {
   "brand": {
     "logo": {
-      "type": "text",
-      "content": "SuaMarca"
+      "type": "image",
+      "content": "/assets/logo-branco.png"
     },
-    "description": "Facilitando a criação de landing pages de alta conversão com tecnologia de ponta e design flexível."
+    "description": "Transporte seguro e confiável 24 horas por dia, 7 dias por semana."
   },
   "nav1": {
     "title": "Links Rápidos",
@@ -18,12 +18,12 @@
         "href": "#sobre"
       },
       {
-        "text": "Projetos",
-        "href": "#projetos"
+        "text": "Serviços",
+        "href": "#servicos"
       },
       {
-        "text": "Blog",
-        "href": "#blog"
+        "text": "Contato",
+        "href": "#contato"
       }
     ]
   },
@@ -31,41 +31,41 @@
     "title": "Serviços",
     "links": [
       {
-        "text": "Desenvolvimento Web",
+        "text": "Corridas Urbanas",
         "href": "#"
       },
       {
-        "text": "Design UI/UX",
+        "text": "Viagens Premium",
         "href": "#"
       },
       {
-        "text": "Consultoria SEO",
+        "text": "Motoristas Mulheres",
         "href": "#"
       },
       {
-        "text": "Marketing Digital",
+        "text": "Agendamento",
         "href": "#"
       }
     ]
   },
   "contact": {
     "title": "Contato",
-    "phone": "+55 (11) 99999-9999",
-    "email": "contato@suamarca.com",
-    "address": "Av. Paulista, 1000 - SP"
+    "phone": "(55) 99999-9999",
+    "email": "contato@primego.com",
+    "address": "Brasil"
   },
   "bottom": {
-    "copyrightText": "© 2025 Sua Empresa. Todos os direitos reservados."
+    "copyrightText": "© 2025 PrimeGo. Todos os direitos reservados."
   },
   "styles": {
-    "--footer-bg": "hsl(222 47% 11%)",
-    "--footer-text-color": "hsl(215 20% 65%)",
-    "--footer-title-color": "hsl(210 40% 98%)",
-    "--footer-link-color": "hsl(215 20% 65%)",
-    "--footer-link-hover": "hsl(210 40% 98%)",
-    "--footer-border-color": "hsl(217 19% 27%)",
+    "--footer-bg": "linear-gradient(135deg,rgba(18, 80, 123, 1) 0%, rgba(38, 104, 147, 1) 50%, rgba(18, 80, 123, 1) 100%)",
+    "--footer-text-color": "hsl(0 0% 100%)",
+    "--footer-title-color": "hsl(48, 93%, 53%)",
+    "--footer-link-color": "hsl(0 0% 100%)",
+    "--footer-link-hover": "hsl(48, 93%, 53%)",
+    "--footer-border-color": "hsla(0, 0%, 100%,.2)",
     "--footer-padding-y": "4rem",
     "--footer-gap": "2rem",
-    "--icon-color": "hsl(210 40% 98%)"
+    "--icon-color": "hsl(48, 93%, 53%)"
   }
 }

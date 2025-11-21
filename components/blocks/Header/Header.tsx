@@ -66,6 +66,7 @@ export function Header({ data }: { data: HeaderData }) {
       className={cn(
         'w-full sticky top-0 z-50',
         'h-(--header-height) bg-(--header-bg) text-(--header-fg) border-b border-(--header-border)',
+        'px-4 md:px-40',
       )}
     >
       <div className="container mx-auto flex items-center justify-between h-full">
